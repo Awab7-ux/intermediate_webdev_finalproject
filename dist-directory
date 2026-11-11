@@ -1,7 +1,6 @@
-assets by status 1.69 KiB [emitted]
-  asset index.html 962 bytes [emitted] [minimized]
-  asset main.js 769 bytes [emitted] [compared for emit] [minimized] (name: main)
 asset style.css 2.3 KiB [compared for emit] [from: style.css] [copied] [minimized]
 asset favicon.ico 1.12 KiB [compared for emit]
+asset index.html 962 bytes [compared for emit] [minimized]
+asset main.js 769 bytes [compared for emit] [minimized] (name: main)
 ./src/script.js 1.05 KiB [built] [code generated]
-webpack 5.112.2 compiled successfully in 580 ms
+webpack 5.112.2 compiled successfully in 1430 ms
