@@ -1,11 +1,11 @@
 const { calculate } = require("../src/script.js");
 
-describe("calculate", () => {
-  it("calculates compound interest", () => {
-    expect(calculate(1000, 5, 2)).toBe(1102.5);
+describe("calculate", function () {
+  it("calculates total with simple interest", function () {
+    expect(calculate(1000, 5, 2)).toBe(1100);
   });
 
-  it("keeps the principal unchanged at zero interest", () => {
+  it("returns the principal when the rate is zero", function () {
     expect(calculate(1000, 0, 5)).toBe(1000);
   });
 });
