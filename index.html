@@ -2,48 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Free online interest rate calculator. Calculate compound interest on your savings or investments instantly.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Interest Rate Calculator</title>
+  <meta name="description" content="Free online interest rate calculator. Calculate simple interest and the total amount on your savings or loans instantly.">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <p class="eyebrow">Plan with confidence</p>
+  <header>
     <h1>Interest Rate Calculator</h1>
   </header>
   <main>
-    <section class="calculator" aria-label="Compound interest calculator">
-      <form>
-        <div class="field">
-          <label for="principal">Initial investment</label>
-          <div class="input-wrap">
-            <span aria-hidden="true">$</span>
-            <input id="principal" name="principal" type="number" min="0" step="any" placeholder="1,000" required>
-          </div>
-        </div>
-        <div class="field">
-          <label for="rate">Annual interest rate</label>
-          <div class="input-wrap">
-            <input id="rate" name="rate" type="number" min="0" step="any" placeholder="5" required>
-            <span aria-hidden="true">%</span>
-          </div>
-        </div>
-        <div class="field">
-          <label for="time">Time period</label>
-          <div class="input-wrap">
-            <input id="time" name="time" type="number" min="0" step="any" placeholder="2" required>
-            <span>years</span>
-          </div>
-        </div>
-        <button id="calculate" type="button">Calculate growth <span aria-hidden="true">&rarr;</span></button>
-      </form>
-      <p id="result" class="result" aria-live="polite">Your future value will appear here.</p>
-    </section>
+    <label for="principal">Principal</label>
+    <input type="number" id="principal" min="0" step="any">
+
+    <label for="rate">Annual interest rate (%)</label>
+    <input type="number" id="rate" min="0" step="any">
+
+    <label for="time">Time (years)</label>
+    <input type="number" id="time" min="0" step="any">
+
+    <button id="calculate" type="button">Calculate</button>
+    <p id="result"></p>
   </main>
   <footer>
-    <p>Compound growth, made clear.</p>
+    <p>&copy; 2026 Interest Rate Calculator</p>
   </footer>
   <script src="src/script.js"></script>
 </body>
